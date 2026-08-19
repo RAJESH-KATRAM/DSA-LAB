@@ -24,7 +24,6 @@ int main() {
     for (int i = 0; i < strlen(postfix); i++) {
         char ch = postfix[i];
 
-        // If operand
         if (isalnum(ch)) {
             char operand[2];
 
@@ -34,7 +33,6 @@ int main() {
             push(operand);
         }
 
-        // If operator
         else {
             char right[MAX];
             char left[MAX];
